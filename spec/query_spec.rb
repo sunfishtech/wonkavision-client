@@ -58,6 +58,18 @@ describe Wonkavision::Client::Query do
     end   
   end
 
+  describe "filter_by" do
+     it "should convert a symbol to a MemberFilter" do
+      @query.filter_by :a
+      @query.filters[0].should be_a_kind_of Wonkavision::Client::MemberFilter
+    end
+
+    it "should append filters to the filters array" do
+      @query.filter_by :dimensions.a.eq(:b), :dimensions.c.eq(:d)
+      @query.filters.length.should == 2
+    end
+  end
+
   describe "from" do
     it "should set and read the from aggregation" do
       @query.from "Abc"
