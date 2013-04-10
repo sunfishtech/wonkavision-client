@@ -61,6 +61,10 @@ module Wonkavision
         self
       end  
 
+      def filter_by(*filters)
+        @filters.concat filters.map{|f|f.kind_of?(MemberFilter) ? f : MemberFilter.new(f) }
+      end
+
       def to_h
         self.to_params
       end
