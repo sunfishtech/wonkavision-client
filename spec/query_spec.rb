@@ -109,25 +109,31 @@ describe Wonkavision::Client::Query do
 
   describe "execute" do
     it "should call get on the client with an appropriate url and params" do
-      @query.stub(:validate!).and_return
       @client.should_receive("get").with("query", {"from"=>"me", "filters"=>"dimension::a::key::eq::'d'", "columns"=>"a"}).and_return({})
       @query.columns "a"
       @query.from "me"
       @query.execute
     end
     it "should wrap the results in a cellset" do
-      @query.stub(:validate!).and_return
       @client.should_receive("get").with("query", {"from"=>"me","filters"=>"dimension::a::key::eq::'d'", "columns"=>"a"}).and_return({})
       @query.columns "a"
       @query.from "me"
       @query.execute.should be_a_kind_of Wonkavision::Client::Cellset
     end
     it "should return raw json when 'raw' is an option" do
-      @query.stub(:validate!).and_return
-      @client.should_receive("get").with("query", {"from"=>"me","filters"=>"dimension::a::key::eq::'d'", "columns"=>"a", :raw=>true}).and_return("pretend this is json")
+      @client.should_receive("get").with("query", {"from"=>"me","filters"=>"dimension::a::key::eq::'d'", "columns"=>"a"}).and_return("pretend this is json")
       @query.columns "a"
       @query.from "me"
       @query.execute(:raw => true).should == "pretend this is json"
+    end
+  end
+
+  describe "execute_facts" do
+    it "should call get on the client with an appropriate url and params" do
+      @client.should_receive("get").with("facts", {"from"=>"me", "filters"=>"dimension::a::key::eq::'d'", "columns"=>"a"}).and_return({})
+      @query.columns "a"
+      @query.from "me"
+      @query.execute_facts
     end
   end
 

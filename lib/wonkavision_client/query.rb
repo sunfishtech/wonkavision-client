@@ -65,12 +65,20 @@ module Wonkavision
       end
 
       def execute(opts={})
-        raw = opts[:raw]
+        raw = opts.delete(:raw)
         cellset_data = @client.get("query", self.to_params.merge!(opts))
         return cellset_data if raw
         cs = Cellset.new(cellset_data)
         raise cellset_data["error"] if cellset_data["error"]
-        raw ? cellset_data : Cellset.new(cellset_data)  
+        Cellset.new(cellset_data)  
+      end
+
+      def execute_facts(opts={})
+        raw = opts.delete(:raw)
+        data = @client.get("facts", self.to_params.merge!(opts))
+        return data if raw
+        raise data["error"] if data["error"]
+        data
       end
 
       def self.axis_names

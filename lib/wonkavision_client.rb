@@ -36,9 +36,6 @@ module Wonkavision
         builder.adapter @adapter
         builder.basic_auth(username, password) if username
       end
-
-      @facts = {}
-      @aggregations = {}
     end
 
     def query(options = {}, &block)
