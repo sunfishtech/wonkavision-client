@@ -16,7 +16,7 @@ describe Symbol do
   end
   context "#sum, #sum2, #count" do
     it "should produce MemberFilters of type measure" do
-      [:sum,:sum2,:count].each do |method|
+      [:sum,:count,:min,:max,:avg].each do |method|
         filter = @symbol.send(method)
         filter.name.should == @symbol
         filter.member_type.should == :measure

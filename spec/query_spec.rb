@@ -79,6 +79,8 @@ describe Wonkavision::Client::Query do
       @query.where :dimensions.a => "d"
       @query.columns "e"
       @query.rows "f","g"
+      @query.attributes :measures.m
+      @query.order :dimensions.d.caption.desc
       @hash = @query.to_h
     end
     it "should include the from aggregation" do
@@ -98,6 +100,12 @@ describe Wonkavision::Client::Query do
       Query.axis_names[2..-1].each do |axis_name|
         @hash.keys.should_not include axis_name
       end
+    end
+    it "should include the attributes" do
+      @hash["attributes"].should == "measure::m::count::asc"
+    end
+    it "should include the sort" do
+      @hash["order"].should == "dimension::d::caption::desc"
     end
   end
 

@@ -10,6 +10,9 @@ module Wonkavision
         @axes = []
         @filters = []
         @measures = []
+        @order =[]
+        @attributes = []
+        @from = nil
       end
 
       def from(cube_name=nil)
@@ -32,6 +35,22 @@ module Wonkavision
         self
       end
 
+      def order(*attributes)
+        return @order unless attributes.length > 0
+        attributes.each do |order|
+          @order << (order.kind_of?(MemberReference) ? order : MemberReference.new(order))
+        end
+        self
+      end
+
+      def attributes(*attributes)
+        return @attributes unless attributes.length > 0
+        attributes.each do |attribute|
+          @attributes << (attribute.kind_of?(MemberReference) ? attribute : MemberReference.new(attribute))
+        end
+        self
+      end
+
       def where(criteria_hash = {})
         criteria_hash.each_pair do |filter,value|
           member_filter = filter.kind_of?(MemberFilter) ? filter :
@@ -50,6 +69,8 @@ module Wonkavision
         query = {"from" => @from}
         query["measures"] = @measures.join(LIST_DELIMITER) if @measures.length > 0
         query["filters"] = @client.prepare_filters(@filters)
+        query["attributes"] = @attributes.map(&:to_s).join(LIST_DELIMITER) if @attributes.length > 0
+        query["order"] = @order.map(&:to_s).join(LIST_DELIMITER) if @order.length > 0
         axes.each_with_index do |axis, index|
           query[self.class.axis_name(index)] = axis.map{|dim|dim.to_s}.join(LIST_DELIMITER)
         end
