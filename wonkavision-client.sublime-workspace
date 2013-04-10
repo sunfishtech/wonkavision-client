@@ -1,0 +1,1487 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"authori",
+				"authorized_provider_keys"
+			],
+			[
+				"author",
+				"authorized_division_keys"
+			],
+			[
+				"divisi",
+				"division_id"
+			],
+			[
+				"inject",
+				"inject_missing_dates"
+			],
+			[
+				"indexin",
+				"indexing_discrepancy"
+			],
+			[
+				"attach",
+				"attachments"
+			],
+			[
+				"subjec",
+				"subject_template"
+			],
+			[
+				"event_con",
+				"event_context_class"
+			],
+			[
+				"trigger",
+				"trigger_event_names"
+			],
+			[
+				"physicia",
+				"physician_certification_statement"
+			],
+			[
+				"facilit",
+				"facility_status"
+			],
+			[
+				"dropo",
+				"dropoff_location_type"
+			],
+			[
+				"avai",
+				"available_units"
+			],
+			[
+				"service",
+				"service_level_id"
+			],
+			[
+				"ser",
+				"service_level_id"
+			],
+			[
+				"fac",
+				"facility_changes"
+			],
+			[
+				"add",
+				"added_ids"
+			],
+			[
+				"remov",
+				"removed_ids"
+			],
+			[
+				"added",
+				"added_unit_ids"
+			],
+			[
+				"removed",
+				"removed_unit_ids"
+			],
+			[
+				"phone",
+				"phone_number_string"
+			],
+			[
+				"sms_",
+				"sms_text_phone_number"
+			],
+			[
+				"sms_txt_phone",
+				"sms_text_phone_number_string"
+			],
+			[
+				"acce",
+				"accepts_nested_attributes_for"
+			],
+			[
+				"transport",
+				"transport_request"
+			],
+			[
+				"current_o",
+				"current_order_step"
+			],
+			[
+				"complete",
+				"complete_transport_request"
+			],
+			[
+				"canc",
+				"canceled"
+			],
+			[
+				"current_order_",
+				"current_order_timestamp"
+			],
+			[
+				"current",
+				"current_order_step"
+			],
+			[
+				"tran",
+				"transport_request"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": ".gitignore",
+			"settings":
+			{
+				"buffer_size": 32,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "wonkavision_client.gemspec",
+			"settings":
+			{
+				"buffer_size": 901,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "lib/wonkavision_client/version.rb",
+			"settings":
+			{
+				"buffer_size": 66,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "lib/wonkavision_client/query.rb",
+			"settings":
+			{
+				"buffer_size": 2742,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "lib/wonkavision_client/cellset.rb",
+			"settings":
+			{
+				"buffer_size": 1434,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "lib/wonkavision_client/aggregation.rb",
+			"settings":
+			{
+				"buffer_size": 852,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "spec/wonkavision-client_spec.rb",
+			"settings":
+			{
+				"buffer_size": 2543,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "spec/cellset_spec.rb",
+			"settings":
+			{
+				"buffer_size": 2081,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "spec/test_query_response.rb",
+			"settings":
+			{
+				"buffer_size": 1221,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "lib/wonkavision_client.rb",
+			"settings":
+			{
+				"buffer_size": 2306,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "spec/aggregation_spec.rb",
+			"settings":
+			{
+				"buffer_size": 2525,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "spec/facts_spec.rb",
+			"settings":
+			{
+				"buffer_size": 1296,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "spec/query_spec.rb",
+			"settings":
+			{
+				"buffer_size": 4233,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "Packages/Ruby/Ruby.sublime-build",
+	"command_palette":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+			[
+				"Package",
+				"Preferences: Browse Packages"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 392.0
+	},
+	"console":
+	{
+		"height": 125.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/nathanstults/Downloads/hsi-dashboards.crt",
+		"/Users/nathanstults/Downloads/hsi-dashboards.key",
+		"/Users/nathanstults/Essential.ca-bundle",
+		"/Users/nathanstults/rpm-dashboards/config/initializers/application.rb",
+		"/Users/nathanstults/rpm-dashboards/app/services/analytics_service.rb",
+		"/Users/nathanstults/rpm-dashboards/app/analytics/schema.rb",
+		"/Users/nathanstults/rpm-dashboards/app/analytics/cubes/transport_cube.rb",
+		"/Users/nathanstults/rpm-dashboards/app/analytics/schema/transport_cube.rb",
+		"/Users/nathanstults/rpm-dashboards/app/models/user.rb",
+		"/Users/nathanstults/rpm-dashboards/db/migrate/20130328235432_add_authorized_provider_and_division_to_user.rb",
+		"/Users/nathanstults/rpm-dashboards/Gemfile",
+		"/Users/nathanstults/rpm-dashboards/app/models/analytics_model.rb",
+		"/Users/nathanstults/rpm-dashboards/app/services/authentication_service.rb",
+		"/Users/nathanstults/rpm-dashboards/app/controllers/application_controller.rb",
+		"/Users/nathanstults/rpm-dashboards/db/schema.rb",
+		"/Users/nathanstults/rpm-dashboards/config/initializers/wonkavision.rb",
+		"/Users/nathanstults/rpm-dashboards/app/analytics/transport_cube.rb",
+		"/Users/nathanstults/RpmOnline/Gemfile",
+		"/Users/nathanstults/RpmOnline/app/controllers/reports_controller.rb",
+		"/Users/nathanstults/RpmOnline/lib/messaging/elastic_search_messenger.rb",
+		"/Users/nathanstults/wonkavision-client/lib/wonkavision_client/query.rb",
+		"/Users/nathanstults/RpmOnline/config/initializers/application.rb",
+		"/Users/nathanstults/RpmOnline/app/models/billing_record.rb",
+		"/Users/nathanstults/RpmOnline/workflow/billing_record/billing_record_state_machine.rb",
+		"/Users/nathanstults/RpmOnline/config/application.rb",
+		"/Users/nathanstults/RpmOnline/lib/service_manager.rb",
+		"/Users/nathanstults/wonkavision/lib/wonkavision/plugins/analytics/cellset.rb",
+		"/Users/nathanstults/wonkavision/test/cellset_test.rb",
+		"/Users/nathanstults/RpmOnline/app/views/reports/aged_ar.html.erb",
+		"/Users/nathanstults/RpmOnline/public/javascripts/wonkavision/wonkavision.js",
+		"/Users/nathanstults/RpmOnline/app/views/reports/work_queue_dashboard.html.erb",
+		"/Users/nathanstults/RpmOnline/app/controllers/work_queues_controller.rb",
+		"/Users/nathanstults/rpm-dashboards/app/services/analytics_data_service.rb",
+		"/Users/nathanstults/rpm-dashboards/app/models/account_state.rb",
+		"/Users/nathanstults/rpm-dashboards/app/models/account_stats.rb",
+		"/Users/nathanstults/rpm-dashboards/app/models/account_stat_details.rb",
+		"/Users/nathanstults/rpm-dashboards/app/models/division.rb",
+		"/Users/nathanstults/rpm-dashboards/app/models/provider.rb",
+		"/Users/nathanstults/rpm-dashboards/app/models/division_privacy.rb",
+		"/Users/nathanstults/RpmOnline/lib/system_integration/rpm_docs_service.rb",
+		"/Users/nathanstults/RpmOnline/app/models/user.rb",
+		"/Users/nathanstults/RpmOnline/app/views/layouts/application.html.erb",
+		"/Users/nathanstults/RpmOnline/app/models/division.rb",
+		"/Users/nathanstults/RpmOnline/app/models/ability.rb",
+		"/Users/nathanstults/RpmOnline/app/models/team.rb",
+		"/Users/nathanstults/rpm-dashboards/Gemfile.lock",
+		"/Users/nathanstults/Dropbox/Scratch/state.rb",
+		"/Users/nathanstults/rpm-dashboards/app/controllers/dashboards_controller.rb",
+		"/Users/nathanstults/rpm-dashboards/app/views/dashboards/_stat_dash.html.erb",
+		"/Users/nathanstults/rpm-dashboards/app/views/layouts/_sidebar.html.erb",
+		"/Users/nathanstults/rpm-dashboards/app/views/dashboards/_stat_table.html.erb",
+		"/Users/nathanstults/rpm-dashboards/app/views/layouts/_breadcrumb.html.erb",
+		"/Users/nathanstults/rpm-dashboards/app/views/dashboards/account_detail.html.erb",
+		"/Users/nathanstults/rpm-dashboards/app/views/dashboards/detail.html.erb",
+		"/Users/nathanstults/rpm-dashboards/app/assets/javascripts/dashboards.js.coffee",
+		"/Users/nathanstults/rpm-dashboards/config/routes.rb",
+		"/Users/nathanstults/rpm-dashboards/app/views/account_reviews/index.html.erb",
+		"/Users/nathanstults/RpmOnline/workflow/billing_record/insurance_claim/insurance_claim_state_machine.rb",
+		"/Users/nathanstults/rpm-dashboards/app/views/layouts/application.html.erb",
+		"/Users/nathanstults/rpm-dashboards/app/views/layouts/_announcements.html.erb",
+		"/Users/nathanstults/rpm-dashboards/app/views/announcements/index.html.erb",
+		"/Users/nathanstults/rpm-dashboards/app/models/ability.rb",
+		"/Users/nathanstults/rpm-dashboards/app/views/account_reviews/_review_summary.html.erb",
+		"/Users/nathanstults/rpm-dashboards/app/assets/javascripts/application.js.coffee",
+		"/Users/nathanstults/rpm-dashboards/tmp/cache/7DE/C32/analytics_data%2Fopen_by_age%2Fgroup_by%3Dparent_state_key%26pipeline%3Dbilling%26time_window%3Dlast_30_days",
+		"/Users/nathanstults/rpm-dashboards/app/models/billing_state.rb",
+		"/Users/nathanstults/rpm-dashboards/app/controllers/api/v1/analytics_controller.rb",
+		"/Users/nathanstults/rpm-dashboards/app/models/time_series.rb",
+		"/Users/nathanstults/rpm-dashboards/Procfile",
+		"/Users/nathanstults/RpmDocs/app/views/layouts/application.html.erb",
+		"/Users/nathanstults/Downloads/rpm_dashboards.key",
+		"/Users/nathanstults/Downloads/rpm_dashboards.crt",
+		"/Users/nathanstults/rpm-dashboards/app/models/account_state_details.rb",
+		"/Users/nathanstults/rpm-dashboards/app/models/moving_calc.rb",
+		"/Users/nathanstults/rpm-dashboards/config/environments/development.rb",
+		"/Users/nathanstults/rpm-dashboards/app/views/layouts/_navigation.html.erb",
+		"/Users/nathanstults/hsi-analytics/scripts/prod_process_dw.sh",
+		"/Users/nathanstults/Dropbox/Scratch/moving_calculation.rb",
+		"/Users/nathanstults/rpm-dashboards/app/models/billing_state_detail.rb",
+		"/Users/nathanstults/Dropbox/Scratch/agg_gen.rb",
+		"/Users/nathanstults/RpmOnline/spec_workflow/insurance_claim_motor_vehicle_accident_spec.rb.killed",
+		"/Users/nathanstults/RpmOnline/admin/fifth_business_day_generator.rb",
+		"/Users/nathanstults/hsi-analytics/scripts/amgh_export.sh",
+		"/Users/nathanstults/hsi-analytics/scripts/closing_days.txt",
+		"/Users/nathanstults/rpm-dashboards/app/controllers/account_reviews_controller.rb",
+		"/Users/nathanstults/RpmOnline/lib/workflow/commands/check_client_involvement.rb",
+		"/Users/nathanstults/rpm-dashboards/app/models/account_review.rb",
+		"/Users/nathanstults/rpm-dashboards/app/models/account.rb",
+		"/Users/nathanstults/rpm-dashboards/app/assets/stylesheets/details.css.scss",
+		"/Users/nathanstults/rpm-dashboards/app/controllers/accounts_controller.rb",
+		"/Users/nathanstults/rpm-dashboards/db/migrate/20130204180745_create_account_reviews.rb",
+		"/Users/nathanstults/rpm-dashboards/app/views/layouts/_content_header.html.erb",
+		"/Users/nathanstults/rpm_analytics/app/facts/credit_facts.rb",
+		"/Users/nathanstults/rpm_analytics/app/facts/billing_record_facts.rb",
+		"/Users/nathanstults/rpm_analytics/app/aggregations/billing_records_durations.rb",
+		"/Users/nathanstults/rpm_analytics/app/facts/work_queue_entry_snapshot_facts.rb",
+		"/Users/nathanstults/rpm-dashboards/db/migrate/20130204230845_update_account_unique_keys.rb",
+		"/Users/nathanstults/Library/Application Support/Sublime Text 3/Packages/Default/Default (OSX).sublime-keymap",
+		"/Users/nathanstults/Library/Application Support/Sublime Text 3/Packages/User/Default (OSX).sublime-keymap",
+		"/Users/nathanstults/Library/Application Support/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/Users/nathanstults/sentient-ems/app/views/transports/show.html.erb",
+		"/Users/nathanstults/sentient-ems/app/controllers/documents_controller.rb",
+		"/Users/nathanstults/sentient-ems/app/views/document_folders/show.html.erb",
+		"/Users/nathanstults/sentient-ems/app/views/documents/_document.html.erb",
+		"/Users/nathanstults/sentient-ems/app/assets/stylesheets/documents.css.scss",
+		"/Users/nathanstults/sentient-ems/app/assets/stylesheets/application.css.scss",
+		"/Users/nathanstults/sentient-ems/app/assets/javascripts/application.js.coffee",
+		"/Users/nathanstults/sentient-ems/app/assets/javascripts/document_folders.js.coffee",
+		"/Users/nathanstults/sentient-ems/app/views/document_folders/edit.html.erb",
+		"/Users/nathanstults/sentient-ems/app/views/document_folders/new.html.erb",
+		"/Users/nathanstults/sentient-ems/app/views/document_folders/_form.html.erb",
+		"/Users/nathanstults/sentient-ems/app/controllers/document_folders_controller.rb",
+		"/Users/nathanstults/sentient-ems/app/views/document_folders/index.html.erb",
+		"/Users/nathanstults/sentient-ems/app/models/document.rb",
+		"/Users/nathanstults/sentient-ems/db/migrate/20130113234442_create_document_folders.rb",
+		"/Users/nathanstults/sentient-ems/db/migrate/20130114000432_add_provider_to_document_folder.rb",
+		"/Users/nathanstults/sentient-ems/config/routes.rb",
+		"/Users/nathanstults/sentient-ems/app/models/ability.rb",
+		"/Users/nathanstults/sentient-ems/app/views/layouts/application.html.erb",
+		"/Users/nathanstults/sentient-ems/db/migrate/20130113234720_create_documents.rb",
+		"/Users/nathanstults/sentient-ems/app/models/document_folder.rb",
+		"/Users/nathanstults/sentient-ems/app/models/attachment.rb",
+		"/Users/nathanstults/sentient-ems/db/migrate/20130113064358_create_announcements.rb",
+		"/Users/nathanstults/sentient-ems/app/views/orders/request_detail.html.erb",
+		"/Users/nathanstults/sentient-ems/app/helpers/application_helper.rb",
+		"/Users/nathanstults/sentient-ems/app/controllers/transports_controller.rb",
+		"/Users/nathanstults/sentient-ems/app/views/transports/assign.html.erb",
+		"/Users/nathanstults/sentient-ems/app/assets/javascripts/announcements.js.coffee"
+	],
+	"find":
+	{
+		"height": 50.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			"/Users/nathanstults/RpmOnline",
+			"/Users/nathanstults/RpmOnline/workflow",
+			"/Users/nathanstults/rpm-dashboards",
+			"/Users/nathanstults/sentient-ems",
+			"/Users/nathanstults/sentient-ems/app/views",
+			"/Users/nathanstults/sentient-ems"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"ServiceManager",
+			"save",
+			":safe",
+			"safe",
+			"persist",
+			"pivot_table",
+			"Client",
+			"Wonkavision",
+			"wonkavision.js",
+			"technical_denial",
+			"collections",
+			"awaiting_payment",
+			"between",
+			"open_by_age",
+			"@time_window",
+			"time_ranges",
+			"@processing_by_end_date",
+			"get_time_range",
+			"time_range",
+			"time",
+			"processing_stats_by ",
+			"processing_stats_by(",
+			"apply_fil",
+			"key_name",
+			"aggregate",
+			"group_pro",
+			"related_to",
+			"stat_summary",
+			":pipeline",
+			"outgoing_stats",
+			":billing_state",
+			"pipeline_stat_summary",
+			"to_time_series",
+			"flatten one level",
+			"write_off_made",
+			"paid",
+			"write_off_made",
+			"appealed",
+			"deleted",
+			"closed",
+			"deleted",
+			"closed",
+			"ignore_account",
+			"account_review_required",
+			"documentation_incomplete",
+			"client_discrepancy",
+			"documentation_incomplete",
+			"record_deleted",
+			"discrepancy_created",
+			"indexing",
+			"only_from",
+			"cancel",
+			"%>\n",
+			"email",
+			"paginate",
+			"application.css",
+			"patient_cer",
+			"h3",
+			"cancel",
+			"transport_request",
+			"assign",
+			"physician_certif",
+			"pickup",
+			"pickup_facility_summary",
+			"\n  ",
+			"/assets/",
+			"png",
+			".png",
+			"<dd>",
+			"</dt>",
+			"</dd>",
+			"<dt>",
+			"transport_date",
+			"../img/",
+			"font",
+			"/assets/font/",
+			".ttf",
+			"../img/",
+			"assets",
+			"img/",
+			"simple_form_for",
+			"form-horizontal",
+			"redirect_to",
+			"icon"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": true,
+		"regex": false,
+		"replace_history":
+		[
+			"message",
+			"physician_cer",
+			"dropoff",
+			"",
+			"</li>",
+			"<li>",
+			"/assets/",
+			"/assets/perfectum/",
+			"/assets",
+			"assets/perfectum/",
+			"horizontal_form_for"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": ".gitignore",
+					"settings":
+					{
+						"buffer_size": 32,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								32,
+								32
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "wonkavision_client.gemspec",
+					"settings":
+					{
+						"buffer_size": 901,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								844,
+								844
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "lib/wonkavision_client/version.rb",
+					"settings":
+					{
+						"buffer_size": 66,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								54,
+								54
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "lib/wonkavision_client/query.rb",
+					"settings":
+					{
+						"buffer_size": 2742,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1867,
+								1867
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 617.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "lib/wonkavision_client/cellset.rb",
+					"settings":
+					{
+						"buffer_size": 1434,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								75,
+								75
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "lib/wonkavision_client/aggregation.rb",
+					"settings":
+					{
+						"buffer_size": 852,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								195,
+								498
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "spec/wonkavision-client_spec.rb",
+					"settings":
+					{
+						"buffer_size": 2543,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1383,
+								1383
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 3.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "spec/cellset_spec.rb",
+					"settings":
+					{
+						"buffer_size": 2081,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								295,
+								295
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "spec/test_query_response.rb",
+					"settings":
+					{
+						"buffer_size": 1221,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								6,
+								6
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 9,
+					"file": "lib/wonkavision_client.rb",
+					"settings":
+					{
+						"buffer_size": 2306,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1240,
+								1240
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 184.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "spec/aggregation_spec.rb",
+					"settings":
+					{
+						"buffer_size": 2525,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								511,
+								1332
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 11,
+					"file": "spec/facts_spec.rb",
+					"settings":
+					{
+						"buffer_size": 1296,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2,
+								1296
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 12,
+					"file": "spec/query_spec.rb",
+					"settings":
+					{
+						"buffer_size": 4233,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3995,
+								3995
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 136.0,
+						"translation.y": 1088.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			0.491859187127,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 311.0
+	},
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"routes.rb",
+				"config/routes.rb"
+			],
+			[
+				"analytics_ser",
+				"app/services/analytics_service.rb"
+			],
+			[
+				"user.rb",
+				"app/models/user.rb"
+			],
+			[
+				"schema.rb",
+				"db/schema.rb"
+			],
+			[
+				"application_contro",
+				"app/controllers/application_controller.rb"
+			],
+			[
+				"analytics_model.rb",
+				"app/models/analytics_model.rb"
+			],
+			[
+				"application.rb",
+				"RpmOnline/config/application.rb"
+			],
+			[
+				"service_man",
+				"RpmOnline/lib/service_manager.rb"
+			],
+			[
+				"elastic_search_mess",
+				"RpmOnline/lib/messaging/elastic_search_messenger.rb"
+			],
+			[
+				"query.",
+				"wonkavision-client/lib/wonkavision_client/query.rb"
+			],
+			[
+				"reports_con",
+				"RpmOnline/app/controllers/reports_controller.rb"
+			],
+			[
+				"cellset.rb",
+				"wonkavision/lib/wonkavision/plugins/analytics/cellset.rb"
+			],
+			[
+				"cellset",
+				"wonkavision/test/cellset_test.rb"
+			],
+			[
+				"work_queue_contro",
+				"RpmOnline/app/controllers/work_queues_controller.rb"
+			],
+			[
+				"work_queue.ht",
+				"RpmOnline/app/views/reports/work_queue_dashboard.html.erb"
+			],
+			[
+				"raged_ar.html.erb",
+				"RpmOnline/app/views/reports/aged_ar.html.erb"
+			],
+			[
+				"analytics_data_service.rb",
+				"app/services/analytics_data_service.rb"
+			],
+			[
+				"application_controller.rb",
+				"app/controllers/application_controller.rb"
+			],
+			[
+				"provider.rb",
+				"app/models/provider.rb"
+			],
+			[
+				"division.rb",
+				"app/models/division.rb"
+			],
+			[
+				"account_stat",
+				"app/models/account_stat_details.rb"
+			],
+			[
+				"account_stats.rb",
+				"app/models/account_stats.rb"
+			],
+			[
+				"account_state.rb",
+				"app/models/account_state.rb"
+			],
+			[
+				"team.rb",
+				"RpmOnline/app/models/team.rb"
+			],
+			[
+				"ability.rb",
+				"RpmOnline/app/models/ability.rb"
+			],
+			[
+				"application.html.erb",
+				"RpmOnline/app/views/layouts/application.html.erb"
+			],
+			[
+				"authentication_service",
+				"app/services/authentication_service.rb"
+			],
+			[
+				"",
+				"Gemfile.lock"
+			],
+			[
+				"sidebar",
+				"rpm-dashboards/app/views/layouts/_sidebar.html.erb"
+			],
+			[
+				"index",
+				"rpm-dashboards/app/views/account_reviews/index.html.erb"
+			],
+			[
+				"inde",
+				"rpm-dashboards/app/views/announcements/index.html.erb"
+			],
+			[
+				"announcements.html.erb",
+				"rpm-dashboards/app/views/layouts/_announcements.html.erb"
+			],
+			[
+				"account_reviews.h",
+				"rpm-dashboards/app/views/account_reviews/_review_summary.html.erb"
+			],
+			[
+				"dashboards.js.cof",
+				"rpm-dashboards/app/assets/javascripts/dashboards.js.coffee"
+			],
+			[
+				"application.js.co",
+				"rpm-dashboards/app/assets/javascripts/application.js.coffee"
+			],
+			[
+				"dashboarrds.js.co",
+				"rpm-dashboards/app/assets/javascripts/dashboards.js.coffee"
+			],
+			[
+				"_stat_table.html.erb",
+				"rpm-dashboards/app/views/dashboards/_stat_table.html.erb"
+			],
+			[
+				"detail.htm",
+				"rpm-dashboards/app/views/dashboards/detail.html.erb"
+			],
+			[
+				"account_state_",
+				"rpm-dashboards/app/models/account_stat_details.rb"
+			],
+			[
+				"billing_state.rb",
+				"rpm-dashboards/app/models/billing_state.rb"
+			],
+			[
+				"accountstate.rb",
+				"rpm-dashboards/app/models/account_state.rb"
+			],
+			[
+				"account_detail",
+				"rpm-dashboards/app/views/dashboards/account_detail.html.erb"
+			],
+			[
+				"_bre",
+				"rpm-dashboards/app/views/layouts/_breadcrumb.html.erb"
+			],
+			[
+				"_stat",
+				"rpm-dashboards/app/views/dashboards/_stat_table.html.erb"
+			],
+			[
+				"side",
+				"rpm-dashboards/app/views/layouts/_sidebar.html.erb"
+			],
+			[
+				"account_stats_",
+				"rpm-dashboards/app/models/account_stat_details.rb"
+			],
+			[
+				"_stat_dash.html.erb",
+				"rpm-dashboards/app/views/dashboards/_stat_dash.html.erb"
+			],
+			[
+				"dashboards_cont",
+				"rpm-dashboards/app/controllers/dashboards_controller.rb"
+			],
+			[
+				"account_stats",
+				"rpm-dashboards/app/models/account_stat_details.rb"
+			],
+			[
+				"analytics_data_ser",
+				"rpm-dashboards/app/services/analytics_data_service.rb"
+			],
+			[
+				"gemfile",
+				"rpm-dashboards/Gemfile"
+			],
+			[
+				"time_series.rb",
+				"rpm-dashboards/app/models/time_series.rb"
+			],
+			[
+				"dashboards_con",
+				"rpm-dashboards/app/controllers/dashboards_controller.rb"
+			],
+			[
+				"dashboards_controller.rb",
+				"rpm-dashboards/app/controllers/dashboards_controller.rb"
+			],
+			[
+				"account_stats.r",
+				"rpm-dashboards/app/models/account_stats.rb"
+			],
+			[
+				"analytics_mode",
+				"rpm-dashboards/app/models/analytics_model.rb"
+			],
+			[
+				"application.html.",
+				"rpm-dashboards/app/views/layouts/application.html.erb"
+			],
+			[
+				"_nav",
+				"rpm-dashboards/app/views/layouts/_navigation.html.erb"
+			],
+			[
+				"development.rb",
+				"rpm-dashboards/config/environments/development.rb"
+			],
+			[
+				"analytics_serv",
+				"rpm-dashboards/app/services/analytics_data_service.rb"
+			],
+			[
+				"billing_state_detail.rb",
+				"rpm-dashboards/app/models/billing_state_detail.rb"
+			],
+			[
+				"account_state",
+				"rpm-dashboards/app/models/account_state.rb"
+			],
+			[
+				"stat_dash.ht",
+				"rpm-dashboards/app/views/dashboards/_stat_dash.html.erb"
+			],
+			[
+				"analytics_data_service",
+				"rpm-dashboards/app/services/analytics_data_service.rb"
+			],
+			[
+				"client_i",
+				"RpmOnline/lib/workflow/commands/check_client_involvement.rb"
+			],
+			[
+				"dashboards_contr",
+				"app/controllers/dashboards_controller.rb"
+			],
+			[
+				"analytics_controller",
+				"app/controllers/api/v1/analytics_controller.rb"
+			],
+			[
+				"account.rb",
+				"rpm-dashboards/app/models/account.rb"
+			],
+			[
+				"account_review.rb",
+				"rpm-dashboards/app/models/account_review.rb"
+			],
+			[
+				"account_review_control",
+				"rpm-dashboards/app/controllers/account_reviews_controller.rb"
+			],
+			[
+				"_review_su",
+				"rpm-dashboards/app/views/account_reviews/_review_summary.html.erb"
+			],
+			[
+				"account_detail.html.erb",
+				"rpm-dashboards/app/views/dashboards/account_detail.html.erb"
+			],
+			[
+				"accounts_contro",
+				"app/controllers/accounts_controller.rb"
+			],
+			[
+				"_side",
+				"app/views/layouts/_sidebar.html.erb"
+			],
+			[
+				"account_reviews_contr",
+				"app/controllers/account_reviews_controller.rb"
+			],
+			[
+				"sideba",
+				"app/views/layouts/_sidebar.html.erb"
+			],
+			[
+				"account_reviews_controller.rb",
+				"app/controllers/account_reviews_controller.rb"
+			],
+			[
+				"detail.css",
+				"app/assets/stylesheets/details.css.scss"
+			],
+			[
+				"account_detail.",
+				"app/views/dashboards/account_detail.html.erb"
+			],
+			[
+				"document.rb",
+				"app/models/document.rb"
+			],
+			[
+				"document_folders_con",
+				"app/controllers/document_folders_controller.rb"
+			],
+			[
+				"documents_contr",
+				"app/controllers/documents_controller.rb"
+			],
+			[
+				"document_folders_controller",
+				"app/controllers/document_folders_controller.rb"
+			],
+			[
+				"documents_cont",
+				"app/controllers/documents_controller.rb"
+			],
+			[
+				"attachment.rb",
+				"app/models/attachment.rb"
+			],
+			[
+				"document_folder.rb",
+				"app/models/document_folder.rb"
+			],
+			[
+				"account_deti",
+				"app/views/dashboards/account_detail.html.erb"
+			],
+			[
+				"transports_con",
+				"app/controllers/transports_controller.rb"
+			],
+			[
+				"assign.html.erb",
+				"app/views/transports/assign.html.erb"
+			],
+			[
+				"announcements_con",
+				"app/controllers/announcements_controller.rb"
+			],
+			[
+				"transports_contro",
+				"app/controllers/transports_controller.rb"
+			],
+			[
+				"application_hel",
+				"app/helpers/application_helper.rb"
+			],
+			[
+				"request_detail",
+				"app/views/orders/request_detail.html.erb"
+			],
+			[
+				"application.html.er",
+				"app/views/layouts/application.html.erb"
+			],
+			[
+				"application.css",
+				"app/assets/stylesheets/application.css.scss"
+			],
+			[
+				"transport_controller.rb",
+				"app/controllers/transports_controller.rb"
+			],
+			[
+				"transports_controller.b",
+				"app/controllers/transports_controller.rb"
+			],
+			[
+				"transport.rb",
+				"app/models/transport.rb"
+			],
+			[
+				"transport_request.rb",
+				"app/models/transport_request.rb"
+			],
+			[
+				"transport.html.erb",
+				"app/views/home/_scheduled_transports.html.erb"
+			],
+			[
+				"schedule.html.erb",
+				"app/views/orders/schedule.html.erb"
+			],
+			[
+				"application.htm.erb",
+				"app/views/layouts/application.html.erb"
+			],
+			[
+				"comment.r",
+				"app/models/comment.rb"
+			],
+			[
+				"message_template.rb",
+				"app/models/message_template.rb"
+			],
+			[
+				"eventable.rb",
+				"app/models/eventable.rb"
+			],
+			[
+				"event.rb",
+				"app/models/event.rb"
+			],
+			[
+				"ability",
+				"app/models/ability.rb"
+			],
+			[
+				"application.html",
+				"app/views/layouts/application.html.erb"
+			],
+			[
+				"add",
+				"app/models/address.rb"
+			],
+			[
+				"eventab",
+				"app/models/eventable.rb"
+			],
+			[
+				"eventa",
+				"app/models/eventable.rb"
+			],
+			[
+				"email_",
+				"app/models/email_template.rb"
+			],
+			[
+				"physici",
+				"app/models/physician_certification_statement.rb"
+			],
+			[
+				"transport_req",
+				"app/models/transport_request.rb"
+			],
+			[
+				"application.js",
+				"app/assets/javascripts/application.js.coffee"
+			],
+			[
+				"eventable",
+				"app/models/eventable.rb"
+			],
+			[
+				"confirm.ht",
+				"app/views/orders/confirm.html.erb"
+			],
+			[
+				"confirm.html.erb",
+				"app/views/orders/confirm.html.erb"
+			],
+			[
+				"physician",
+				"app/controllers/physician_certification_statements_controller.rb"
+			],
+			[
+				"physician_",
+				"app/models/physician_certification_statement.rb"
+			],
+			[
+				"pcs_qu",
+				"app/models/pcs_question.rb"
+			],
+			[
+				"physician_certification_statements_he",
+				"app/helpers/physician_certification_statements_helper.rb"
+			],
+			[
+				"eventable.",
+				"app/models/eventable.rb"
+			],
+			[
+				"comments_con",
+				"app/controllers/comments_controller.rb"
+			],
+			[
+				"routesrb",
+				"config/routes.rb"
+			],
+			[
+				"phsyician_certification_statement.rb",
+				"app/helpers/physician_certification_statements_helper.rb"
+			],
+			[
+				"phsyicic",
+				"app/helpers/physician_certification_statements_helper.rb"
+			],
+			[
+				"physician_cer",
+				"app/models/physician_certification_statement.rb"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": false,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 304.0,
+	"status_bar_visible": true
+}
