@@ -103,6 +103,7 @@ module Wonkavision
         data = @client.get("facts", self.to_params.merge!(opts))
         return data if raw
         raise data["error"] if data["error"]
+        Paginated.apply(data["data"], data["pagination"]) if data["pagination"]
         data
       end
 
