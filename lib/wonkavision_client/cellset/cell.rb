@@ -34,7 +34,7 @@ module Wonkavision
             dimensions.each_with_index do |dim_name, index|
               @filters << MemberFilter.new(dim_name, :value => key[index])
             end
-            @filters += cellset.slicer
+            @filters += cellset.filters
           end
           @filters
         end

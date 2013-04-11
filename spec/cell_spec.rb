@@ -30,7 +30,7 @@ describe Wonkavision::Client::Cellset::Cell do
   end
 
   it "should include the query slicer in the filter list" do
-    @cell.filters[1..-1].should == @cellset.slicer
+    @cell.filters[1..-1].should == @cellset.filters
   end
 
 
