@@ -5,7 +5,7 @@ module Wonkavision
   class Client
     module Symbol
 
-      [:key, :caption, :sort].each do |dimension_attribute|
+     [:key, :caption, :sort].each do |dimension_attribute|
         define_method(dimension_attribute) do
           _member_reference(dimension_attribute, :member_type=>:dimension)
         end unless method_defined?(dimension_attribute)
@@ -23,7 +23,11 @@ module Wonkavision
 
       private
       def _member_type
-        [:measures,:facts].include?(self) ? :measure : :dimension
+        case self
+        when :measures then :measure
+        when :facts then :fact
+        else :dimension
+        end
       end
 
       def _is_member_reference?
