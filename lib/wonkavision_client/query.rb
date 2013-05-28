@@ -13,6 +13,7 @@ module Wonkavision
         @order =[]
         @attributes = []
         @from = nil
+        from_params(options[:params]) if options[:params]
       end
 
       def from(cube_name=nil)
@@ -37,7 +38,7 @@ module Wonkavision
 
       def order(*attributes)
         return @order unless attributes.length > 0
-        attributes.each do |order|
+        attributes.flatten.each do |order|
           @order << (order.kind_of?(MemberReference) ? order : MemberReference.new(order))
         end
         self
@@ -45,7 +46,7 @@ module Wonkavision
 
       def attributes(*attributes)
         return @attributes unless attributes.length > 0
-        attributes.each do |attribute|
+        attributes.flatten.each do |attribute|
           @attributes << (attribute.kind_of?(MemberReference) ? attribute : MemberReference.new(attribute))
         end
         self
@@ -62,7 +63,7 @@ module Wonkavision
       end  
 
       def filter_by(*filters)
-        @filters.concat filters.map{|f|f.kind_of?(MemberFilter) ? f : MemberFilter.new(f) }
+        @filters.concat filters.flatten.map{|f|f.kind_of?(MemberFilter) ? f : MemberFilter.new(f) }
       end
 
       def to_h
@@ -79,6 +80,21 @@ module Wonkavision
           query[self.class.axis_name(index)] = axis.map{|dim|dim.to_s}.join(LIST_DELIMITER)
         end
         query
+      end
+
+      def from_params(params)
+        from params["from"] if params["from"]
+        measures params["measures"].split(LIST_DELIMITER) if params["measures"]
+        filter_by params["filters"].split(LIST_DELIMITER).map{|f|MemberFilter.parse(f)} if params["filters"]
+        attributes params["attributes"].split(LIST_DELIMITER).map{|f|MemberReference.parse(f)} if params["attributes"]
+        order params["order"].split(LIST_DELIMITER).map{|f|MemberReference.parse(f)} if params["order"]
+        self.class.axis_names.each do |axis_name|
+          if params[axis_name]
+            dims = params[axis_name].split(LIST_DELIMITER)
+            select *dims, :on => axis_name
+          end
+        end
+        self
       end
 
       def to_s

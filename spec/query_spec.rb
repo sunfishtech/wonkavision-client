@@ -121,6 +121,43 @@ describe Wonkavision::Client::Query do
     end
   end
 
+  describe "from_params" do
+    before :each do 
+      @query.from "the top"
+      @query.measures "a","b","c"
+      @query.where :dimensions.a => "d"
+      @query.columns "e"
+      @query.rows "f","g"
+      @query.attributes :measures.m
+      @query.order :dimensions.d.caption.desc
+      @hash = @query.to_h
+      @query2 = Query.new(@client)
+      @query2.from_params(@hash)
+    end
+    it "should read from" do
+      @query2.from.should == "the top"
+    end
+    it "should read measures" do
+      @query2.measures.should == %w(a b c)
+    end
+    it "should read filters" do
+      @query2.filters.length.should == @query.filters.length
+      @query2.filters.should == @query.filters
+    end
+    it "should read attributes" do
+      @query2.attributes.should == @query.attributes
+    end
+    it "should read order" do
+      @query2.order.should == @query.order
+    end
+    it "should read columns" do
+      @query2.axes[0].should == @query.axes[0]
+    end
+    it "should read rows" do
+     @query2.axes[0].should == @query.axes[0]
+    end
+  end
+
   describe "to_s" do
     it "should inspect the results of to_h" do
       @query.to_s.should == @query.to_h.inspect
