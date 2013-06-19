@@ -93,6 +93,9 @@ describe Wonkavision::Client::Query do
       @query.rows "f","g"
       @query.attributes :measures.m
       @query.order :dimensions.d.caption.desc
+      @query.top 5, "topdim", {
+        :measure=>"topm", :exclude=>["topex1","topex2"], :where=>{"happy"=>"sad"}
+      }
       @hash = @query.to_h
     end
     it "should include the from aggregation" do
@@ -119,6 +122,13 @@ describe Wonkavision::Client::Query do
     it "should include the sort" do
       @hash["order"].should == "dimension::d::caption::desc"
     end
+    it "should include top filter params" do
+      @hash["top_filter_count"].should == 5
+      @hash["top_filter_dimension"].should == "topdim"
+      @hash["top_filter_measure"].should == "topm"
+      @hash["top_filter_exclude"].should == "topex1|topex2"
+      @hash["top_filter_filters"] = "dimension::happy::key::eq::'sad'"
+    end
   end
 
   describe "from_params" do
@@ -130,6 +140,9 @@ describe Wonkavision::Client::Query do
       @query.rows "f","g"
       @query.attributes :measures.m
       @query.order :dimensions.d.caption.desc
+      @query.top 5, "topdim", {
+        :measure=>"topm", :exclude=>["topex1","topex2"], :where=>{"happy"=>"sad"}
+      }
       @hash = @query.to_h
       @query2 = Query.new(@client)
       @query2.from_params(@hash)
@@ -155,6 +168,15 @@ describe Wonkavision::Client::Query do
     end
     it "should read rows" do
      @query2.axes[0].should == @query.axes[0]
+    end
+    it "should read top filter" do
+      @query2.top_filter.should == {
+        :count => 5,
+        :measure => "topm",
+        :dimension => :topdim,
+        :exclude => [:topex1,:topex2],
+        :filters => [:dimensions.happy.key.eq("sad")]
+      }
     end
   end
 

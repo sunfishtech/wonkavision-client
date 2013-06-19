@@ -3,7 +3,7 @@ module Wonkavision
     class Query
       LIST_DELIMITER = "|"
 
-      attr_reader :axes, :filters, :client
+      attr_reader :axes, :filters, :client, :top_filter
 
       def initialize(client, options = {})
         @client = client
@@ -13,6 +13,7 @@ module Wonkavision
         @order =[]
         @attributes = []
         @from = nil
+        @top_filter = nil
         from_params(options[:params]) if options[:params]
       end
 
@@ -39,7 +40,7 @@ module Wonkavision
       def order(*attributes)
         return @order unless attributes.length > 0
         attributes.flatten.each do |order|
-          @order << (order.kind_of?(MemberReference) ? order : MemberReference.new(order))
+          @order << to_ref(order)
         end
         self
       end
@@ -47,23 +48,33 @@ module Wonkavision
       def attributes(*attributes)
         return @attributes unless attributes.length > 0
         attributes.flatten.each do |attribute|
-          @attributes << (attribute.kind_of?(MemberReference) ? attribute : MemberReference.new(attribute))
+          @attributes << to_ref(attribute)
         end
         self
       end
 
       def where(criteria_hash = {})
         criteria_hash.each_pair do |filter,value|
-          member_filter = filter.kind_of?(MemberFilter) ? filter :
-            MemberFilter.new(filter)
-          member_filter.value = value
+          member_filter = to_filter(filter,value)
           @filters << member_filter
         end
         self
       end  
 
       def filter_by(*filters)
-        @filters.concat filters.flatten.map{|f|f.kind_of?(MemberFilter) ? f : MemberFilter.new(f) }
+        @filters.concat filters.flatten.map{|f|to_filter(f)}
+      end
+
+      def top(num, dimension, options={})
+        filters = options[:filters].map{|f|to_filter(f)} if options[:filters]
+        filters ||= (options[:where] || {}).map{|f,v| to_filter(f,v)}
+        @top_filter = {
+          :count => num,
+          :dimension => dimension.to_sym,
+          :measure => options[:by] || options[:measure],
+          :exclude => [options[:exclude]].flatten.compact.map{|d|d.to_sym},
+          :filters => filters
+        }
       end
 
       def to_h
@@ -79,6 +90,13 @@ module Wonkavision
         axes.each_with_index do |axis, index|
           query[self.class.axis_name(index)] = axis.map{|dim|dim.to_s}.join(LIST_DELIMITER)
         end
+        if top_filter
+          query["top_filter_count"] = top_filter[:count]
+          query["top_filter_dimension"] = top_filter[:dimension].to_s
+          query["top_filter_measure"] = top_filter[:measure].to_s if top_filter[:measure]
+          query["top_filter_exclude"] = (top_filter[:exclude] || []).map(&:to_s).join(LIST_DELIMITER)
+          query["top_filter_filters"] = (top_filter[:filters] || []).map(&:to_s).join(LIST_DELIMITER)
+        end
         query
       end
 
@@ -93,6 +111,13 @@ module Wonkavision
             dims = params[axis_name].split(LIST_DELIMITER)
             select *dims, :on => axis_name
           end
+        end
+        if params["top_filter_count"] && params["top_filter_dimension"]
+          top params["top_filter_count"].to_i, params["top_filter_dimension"], {
+            :measure => params["top_filter_measure"],
+            :exclude => (params["top_filter_exclude"] || "").split(LIST_DELIMITER),
+            :filters => (params["top_filter_filters"] || "").split(LIST_DELIMITER).map{|f|MemberFilter.parse(f)}
+          }
         end
         self
       end
@@ -150,7 +175,17 @@ module Wonkavision
         self
       end
 
-      
+      def to_ref(ref_or_string, default_type = :dimension)
+        return nil if ref_or_string.nil?
+        ref_or_string.kind_of?(MemberReference) ? ref_or_string : MemberReference.new(ref_or_string, :member_type => default_type)
+      end
+
+      def to_filter(filter_or_string, value = nil)
+        return nil if filter_or_string.nil?
+        filter = filter_or_string.kind_of?(MemberFilter) ? filter_or_string : MemberFilter.new(filter_or_string)
+        filter.value = value unless value.nil?
+        filter
+      end
 
     end
   end
