@@ -3,7 +3,7 @@ module Wonkavision
     class Query
       LIST_DELIMITER = "|"
 
-      attr_reader :axes, :filters, :client, :top_filter
+      attr_reader :axes, :filters, :client, :top_filter, :attributes
 
       def initialize(client, options = {})
         @client = client

@@ -69,4 +69,28 @@ describe Wonkavision::Client do
     end
   end
 
+   describe "dimension_query" do
+    describe "when a block is given that takes a parameter" do
+      it "should yield the query to the block" do
+        @client.dimension_query do |q|
+          q.should be_a_kind_of(Wonkavision::Client::DimensionQuery)
+        end.should be_a_kind_of Wonkavision::Client::DimensionQuery
+      end
+    end
+    describe "when a block is given with no arity" do
+      it "should instance eval the block against the query" do
+        q = @client.dimension_query do
+          from :a
+        end
+        q.should be_a_kind_of Wonkavision::Client::DimensionQuery
+        q.from.should == "a"
+      end
+    end
+    describe "when no block is given" do
+      it "should just return the query" do
+        @client.dimension_query.should be_a_kind_of Wonkavision::Client::DimensionQuery
+      end
+    end
+  end
+
 end

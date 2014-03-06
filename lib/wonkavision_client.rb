@@ -11,6 +11,7 @@ require "wonkavision_client/extensions"
 require "wonkavision_client/member_reference"
 require "wonkavision_client/member_filter"
 require "wonkavision_client/query"
+require "wonkavision_client/dimension_query"
 require "wonkavision_client/cellset/cell"
 require "wonkavision_client/cellset/axis"
 require "wonkavision_client/cellset/measure"
@@ -41,6 +42,18 @@ module Wonkavision
 
     def query(options = {}, &block)
       new_query = Query.new(self, options)
+      if block_given?
+        if block.arity > 0
+          yield new_query
+        else
+          new_query.instance_eval(&block)
+        end
+      end
+      new_query
+    end
+
+    def dimension_query(options={},&block)
+      new_query = DimensionQuery.new(self, options)
       if block_given?
         if block.arity > 0
           yield new_query
