@@ -63,7 +63,7 @@ module Wonkavision
 
       def to_params
         query = {"from" => @from}
-        query["filters"] = @client.prepare_filters(@filters)
+        query["filters"] = @client.prepare_filters(@filters, false)
         query["attributes"] = @attributes.map(&:to_s).join(Query::LIST_DELIMITER) if @attributes.length > 0
         query["order"] = @order.map(&:to_s).join(Query::LIST_DELIMITER) if @order.length > 0
         query

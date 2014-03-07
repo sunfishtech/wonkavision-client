@@ -88,9 +88,9 @@ module Wonkavision
       json ? Yajl::Parser.new.parse(json) : {}
     end
 
-    def prepare_filters(filters)
-      filters = (filters + Wonkavision::Client.context.global_filters).compact.uniq
-      filters.map{|f|f.to_s}.join(Query::LIST_DELIMITER)  
+    def prepare_filters(filters, apply_global_filters=true)
+      filters = (filters + Wonkavision::Client.context.global_filters) if apply_global_filters
+      filters.compact.uniq.map{|f|f.to_s}.join(Query::LIST_DELIMITER)  
     end
 
   end
