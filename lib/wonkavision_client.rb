@@ -64,6 +64,10 @@ module Wonkavision
       new_query
     end
 
+    def raw_query(query)
+      get("raw",:query=>query)
+    end
+    
     #http methods
     def self.default_adapter
       Faraday.default_adapter
